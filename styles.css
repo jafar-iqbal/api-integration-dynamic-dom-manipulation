@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#nav-container {
+  padding: 25px;
+  background-color: rgb(198, 188, 188);
+  display: flex;
+  justify-content: center;
+}
+.category-bar button {
+  padding: 10px 20px;
+  background-color: rgb(242, 242, 242);
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.search-container {
+  text-align: center;
+  margin-top: 25px;
+}
+#search-box {
+  padding: 20px 30px;
+  width: 50%;
+  margin: 20px 0px 20px 20px;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  background-color: #dbdada;
+}
+#search-btn {
+  padding: 20px 30px;
+  margin-left: -5px;
+  border: none;
+  background-color: gray;
+  color: white;
+  border-radius: 0 5px 05px 0px;
+}
+#search-btn:hover {
+  background-color: rgb(1, 1, 58);
+  color: white;
+}
+.news-container {
+  width: 70%;
+  margin: 0 auto;
+
+}
+.single-news{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.438);
+}
+.img-container {
+  width: 32%;
+  height: 100%;
+  display: grid;
+}
+.img-container img {
+  width: 100%;
+
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.text-container {
+  width: 68%;
+  padding: 10px;
+}
+.text-container .rating {
+  display: flex;
+  justify-content: end;
+}
+
+.text-container .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.detail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.detail-container img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.detail-container .author-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detail-container .view-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+.view-btn p {
+  margin-left: 10px;
+}
+.detail-container button {
+  padding: 10px 20px;
+  background-color: rgb(175, 175, 175);
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+.loading-spinner img{
+    width: 25%;
+    margin: auto;
+}
+.loading-spinner{
+    text-align: center;
+    padding: 50px;
+display: none;
+}
+@media only screen and (max-width: 600px) {
+  .news-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .img-container,
+  .text-container {
+    width: 100%;
+  }
+  .img-container {
+    grid-auto-columns: 1fr;
+  }
+}
